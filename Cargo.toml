@@ -1,0 +1,12 @@
+[package]
+name = "mimi"
+version = "0.1.0"
+authors = ["Сухарик <suhr@i2pmail.org>"]
+
+[dependencies]
+clap = "*"
+portmidi = "*"
+rosc = "*"
+
+[dependencies.miosc]
+git = "https://github.com/diaschisma/miosc.git"
