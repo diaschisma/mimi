@@ -1,8 +1,4 @@
-extern crate portmidi;
-extern crate rosc;
-extern crate miosc;
-
-extern crate clap;
+use miosc::rosc;
 
 fn midi_pitch(midi: u8, edo: f32, ref_key: f32, ref_pitch: f32) -> f32 {
     (midi as f32 - ref_key) * 12.0 / edo + ref_pitch
